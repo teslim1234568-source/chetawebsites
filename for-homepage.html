@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chetahomepage</title>
+</head> 
+
+<style> 
+  
+  body {
+   margin: 0;
+    background-color: rgb(214, 214, 214);
+  }
+  .headerdiv {
+   margin: 0;
+     background-color: white;
+     width: 100%; 
+     display: flex;
+     height: 80px;
+     justify-content: center; 
+     align-items: center;
+     position: relative;
+     position: fixed;
+     top: 0;
+     z-index: 2000;
+     
+  }  
+    .headerlogoimgdiv {
+     height: 100%;
+    
+     width: 30%; 
+     margin-left: 60px;
+     margin-right: 60px;
+    } 
+
+    .headerlogoimg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transform: scale(2.2);
+    } 
+    .headermenudiv {
+      font-size: 40px;
+    }
+   .headershopcartdiv {
+      font-size: 40px;  
+   } 
+   .for-menu {
+    background-color: black; 
+    display: none;
+    flex-direction: column;
+    color: white;
+    width: 120px;
+    font-size: 12px;
+    height: 300px;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
+    position: fixed;
+    
+   }
+   .for-menua {
+    margin-top: 40px;
+    color: rgb(160, 160, 160);
+    text-decoration: none;
+   } 
+   .forfisrtpdiv {
+     background-color: black;
+     color: white;
+     height: 240px;
+     margin-top: -15px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 80px;
+   }
+  
+  .forfisrtp {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(199, 198, 198);
+  } 
+
+  .forfisrtp2 {
+    text-align: center;
+    font-size: 12px;
+    max-width: 320px;
+    margin-top: -10px;
+     color: rgb(161, 161, 161);
+  } 
+  .for-what-we-do {
+     display: flex;
+     flex-direction: column;
+     margin-top: 50px; 
+     margin-left: 5px;
+  } 
+  .for-what-we-dop1 {
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .for-what-we-doinsidediv {
+     display: flex;
+     flex-direction: column;
+     margin-top: -15px;
+  } 
+  .for-what-we-doinsidedivp1 {
+    font-weight: bold;
+  }
+  .for-what-we-doinsidedivp1span {
+    font-weight: bold;
+    font-size: 20px;
+     display: block;
+     margin-bottom: 10px;
+     font-family: none;
+  } 
+  .for-what-we-doinsidedivp1entithy {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .for-what-we-doinsidedivpp1 {
+    font-size: 14px;
+    max-width: 400px;
+    font-family: sans-serif;
+  }
+
+  .whychooseus {
+    height: 530px;
+    background-color: black;
+    margin-top: 40px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .whychooseus1 {
+    width: 80%;
+    background-color: #f3f6f9;
+    display: flex;
+    height: 120px;
+    align-items: center;
+     border-radius: 24px;
+     border :  1px solid rgb(255, 255, 255);
+     margin-top: 10px;
+  }
+
+  .whychooseus1p {
+    font-size: 10px;
+    max-width: 400px;
+    
+    margin-right: 5px; 
+    margin-top: 10px;
+  } 
+
+  .whychooseusp {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  } 
+
+  .whychooseus1entithy {
+   font-size: 50px;
+  } 
+
+  .whychooseus1pspan {
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: bold;
+  } 
+  .calltoaction {
+     display: flex;
+     flex-direction: column;
+     height: 250px;
+     width: 100%;
+     margin-top: 20px;
+     background-color: #f8f9fa;
+     justify-content: center;
+     align-items: center;
+  } 
+  .calltoactionp {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+  } 
+  .calltoactionp2 {
+    font-size: 13px;
+    margin-top: -10px;
+  } 
+  .calltoactionbutton {
+    height: 40px;
+    background-color: #075E54;;
+  } 
+  .footer {
+    display: flex;
+    width: 100%; 
+    justify-content: space-between;
+    height: 160px;
+    align-items: center;
+    margin-bottom: -40px;
+    background-color: black;
+  } 
+  .footerlogos {
+    display: flex;
+    margin-right: 20px;
+  } 
+  .footerlogoimgdiv{
+    width: 70%;
+    background-color: black;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 10px;
+  } 
+  .footerlogoimg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1.9);
+  } 
+  .footerlogoimg2 {
+     width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1.2);
+  }
+  .footerp {
+   margin-left: 15px;
+   font-weight: bold;
+   font-size: 30px;
+   color: white;
+  } 
+ .navigatediv {
+  
+  margin-right: 20px;
+ }
+ .footer2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+ } 
+
+ .navigatediva {
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+ }
+  .navigatep {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+  }
+  .navigatedivaa {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    margin-top: 10px;
+    color: white;
+    
+  } 
+  .addressp {
+    text-align: center;
+    font-size: 19px;
+    color: white;
+  }
+
+  .addressp1 {
+    text-align: center;
+    font-size: 22px;
+  font-weight: bold;
+  color: white;
+  }
+  .addressdiv {
+
+    margin-left: 15px;
+  }
+  
+  .lastfooter {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  } 
+  .lastfooterp {
+    font-size: 17px;
+  }  
+  
+
+ 
+</style>
+<body>
+   <div class="headerdiv"> 
+    <div onclick="formenu2();" class="headermenudiv">&#9776;</div>
+   <div class="headerlogoimgdiv"><img class="headerlogoimg"  src="../for-image/download.png" ></div>
+   <a class="headershopcartdiv" href="for-checkout.html" style="text-decoration: none;">&#128722;</a>
+   </div> 
+
+    <div class="for-menu">
+   <a href="for-homepage.html" class="for-menua">HOME</a>
+   <a href="product.html" class="for-menua">PRODUCTS</a>
+   <a href="for-checkout.html"  class="for-menua">CHECKOUTPAGE</a>
+   <a href="#about"  class="for-menua">ABOUT US</a>
+   </div>
+
+   <div class="forfisrtpdiv">
+    <p class="forfisrtp">
+      Get a fast "Cheta"website for Your Business
+    </p>
+    <p class="forfisrtp2">Stop wasting hours calculating prices in the DMS. Let your customers browse your products , see total cost instantly and send accurate orders directly to your WhatsApp in one click</p>
+   </div>   
+    <section id="about">
+   <div class="for-what-we-do">
+    <p class="for-what-we-dop1">CORE FEATURES</p>
+     <div class="for-what-we-doinsidediv">
+    <p class="for-what-we-doinsidedivp1">WHAT OUR SITES  WILL DO</p> 
+    <p class="for-what-we-doinsidedivpp1"><span class="for-what-we-doinsidedivp1entithy">&#128230;</span> <span class="for-what-we-doinsidedivp1span">Dynamic Product Display</span>  A clean, fast mobile catalog showcasing your item with clear images,names, and prices. </p> 
+    <p class="for-what-we-doinsidedivpp1"><span class="for-what-we-doinsidedivp1entithy">&#128722;</span> <span class="for-what-we-doinsidedivp1span">Instant Price Calculation</span> Calculates the total automatically as items are added, completely removing humman error.</p>
+    <p class="for-what-we-doinsidedivpp1"><span class="for-what-we-doinsidedivp1entithy">&#128172;</span> <span class="for-what-we-doinsidedivp1span" >Direct Whatsapp Checkout</span> sends serious buyers directly to your chat with an automated, pre-formatted order message.</p> 
+    </div>
+   </div> 
+   </section>
+     
+
+   <div class="whychooseus">
+
+      <p  class="whychooseusp">Why Choose Us</p>
+
+    <div class="whychooseus1">
+       <p class="whychooseus1entithy">&#128640;</p>
+       <p class="whychooseus1p"><span class="whychooseus1pspan">Built with pure code</span>
+       I build website using pure HTML ,CSS ,and Javascript. No heavy, bloated Wordpress pluging that slow down your loading times.</p>
+    </div>
+
+
+
+     <div class="whychooseus1">
+       <p class="whychooseus1entithy">&#128202;</p>
+       <p class="whychooseus1p"><span class="whychooseus1pspan">Optimized for Local Networks</span>
+       The code is highly optimized to load instantly on standard MTN, Airtel, and Glo mobile data networks so you never lose a customer.</p>
+    </div>
+     
+
+
+       <div class="whychooseus1">
+       <p class="whychooseus1entithy">&#128170;</p>
+       <p class="whychooseus1p"><span class="whychooseus1pspan">Local & Reliable Support</span>
+        Based right here in Nigeria. I build tools specifically tailored to solve the everyday operational struggles faced by Nigeria small businesses.</p>
+    </div>
+
+   </div>  
+
+
+    <div class="calltoaction">
+      <p class="calltoactionp">Ready to automate your sales?</p>
+      <p class="calltoactionp2">Let's build a fast, responsive site that closes deals while you sleep.</p>
+     <button onclick="window.open('https://wa.me/2348102569125?text=I%20am%20interested%20in%20building%20a%20website%20for%20my%20business', '_blank')" class="calltoactionbutton">Chat with us on WhatsApp</button> 
+
+    </div> 
+     
+      <div>
+    <div class="footer">
+    
+      <p class="footerp">CONTACT US</p> 
+      
+      
+     
+      
+     
+      <div class="footerlogos">
+        
+        <div class="footerlogoimgdiv"><img class="footerlogoimg"  src="../for-image/whatsapp-logo-transparent-free-png-removebg-preview.png" ></div>
+        <div class="footerlogoimgdiv"><img class="footerlogoimg2"  src="../for-image/instagram-logo-instagram-icon-transparent-free-png.webp" ></div> 
+    </div> 
+      </div> 
+      </div>  
+        
+
+
+        <div class="footer2"> 
+          <div class="addressdiv">
+            <p class="addressp1">ADDRESS</p>
+            <p class="addressp">Africa</p>
+            <p class="addressp">Nigeria</p>
+            <p class="addressp">Lagos</p>
+          </div>
+         <div class="navigatediv">
+        <p class="navigatep">NAVIGATE</p> 
+        <div class="navigatediva">
+        <a href="for-homepage.html" class="navigatedivaa">HOME</a>
+        <a href="product.html" class="navigatedivaa">PRODUCTS</a>
+        <a href="for-checkout.html"  class="navigatedivaa">CHECKOUTPAGE</a>
+        <a href="#about" class="navigatedivaa">ABOUT US</a>
+        </div>
+       </div>  
+       </div>
+    </div>
+    <div class="lastfooter">
+      <p class="lastfooterp">&copy; Cheta website. All Rights Reserved.</p>
+    </div>
+
+
+   
+   
+    
+    
+
+     
+   
+   
+  
+   <script>
+     'use strict';
+
+    
+   function formenu2 () {
+      let formenutouch = document.querySelector('.for-menu');
+      if (formenutouch.style.display === "flex") {
+        formenutouch.style.display = "none"
+      } 
+      else {
+        formenutouch.style.display = "flex";
+      }
+   }
+
+   </script>
+</body>
+</html>
